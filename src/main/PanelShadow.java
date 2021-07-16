@@ -88,7 +88,7 @@ public class PanelShadow extends JPanel {
         }
         BufferedImage img = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
         Graphics2D g = img.createGraphics();
-        g.setBackground(getBackground());
+        g.setColor(getBackground());
         g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
         //  g.fillRoundRect(0, 0, width, height, 10, 10);
         g.fillOval(0, 0, width, width);
